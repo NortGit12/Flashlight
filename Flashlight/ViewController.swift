@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     var isOn = false
     @IBOutlet weak var stateButton: UIButton!
     
+    
     // MARK: - General
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func buttonTapped(sender: UIButton) {
+    @IBAction func buttonTapped(sender: AnyObject) {
         
         var backColor = UIColor()
         var frontColor = UIColor()
@@ -84,6 +85,7 @@ class ViewController: UIViewController {
             // Change front color(s)
             stateButton.setTitleColor(frontColor, forState: .Normal)
             
+            
         case false:
             backColor = .whiteColor()
             frontColor = .blackColor()
@@ -101,5 +103,8 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    
+    
 
 }

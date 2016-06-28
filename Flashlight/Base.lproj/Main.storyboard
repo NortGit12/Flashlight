@@ -31,6 +31,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="al0-D5-3VC" firstAttribute="centerX" secondItem="RM9-94-oE1" secondAttribute="centerX" id="GAe-JT-g2V"/>
                             <constraint firstItem="54a-yu-dwE" firstAttribute="top" secondItem="al0-D5-3VC" secondAttribute="bottom" constant="20" id="wnE-Ry-Qk3"/>
@@ -41,6 +42,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wEZ-Yn-eUF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZYx-ay-VaP">
+                    <connections>
+                        <action selector="handlePan:" destination="2rq-y6-9Oj" id="V0a-Rf-sSF"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="87" y="351"/>
         </scene>

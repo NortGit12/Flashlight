@@ -58,9 +58,9 @@ class FlashlightTests: XCTestCase {
         
         var pass: Bool
         
-        if vc.isOn && vc.view.backgroundColor == UIColor.whiteColor() && vc.button.titleLabel?.text == "Off" {
+        if vc.isOn && vc.view.backgroundColor == UIColor.whiteColor() && vc.stateButton.titleLabel?.text == "Off" {
             pass = true
-        } else if !vc.isOn && vc.view.backgroundColor == UIColor.blackColor() && vc.button.titleLabel?.text == "On" {
+        } else if !vc.isOn && vc.view.backgroundColor == UIColor.blackColor() && vc.stateButton.titleLabel?.text == "On" {
             pass = true
         } else {
             pass = false
